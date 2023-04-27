@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Brave">
+    <link rel="icon" href="favicon.ico"/>
+    <meta name="keywords" content="">
+
+    <title>Brave- Home</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+</head>
+<style>
+
+    .skip-button {
+        width: 140px;
+        height: 45px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .skip-button:hover {
+        background-color: #2EE59D;
+        box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+    }
+</style>
+<body class="simple">
+<!-- preloader -->
+<div class="preloader-container">
+    <div class="content-container">
+        <!-- preloader -->
+        <span class="spinner-section-far"></span>
+        <!-- end preloader -->
+        <h6 class="preloader-text">
+            LOADING</h6>
+    </div>
+</div>
+
+<!--<img class="img-logo" alt="logo" src="img/logo_white.png"/>-->
+
+
+<div class="open">
+    <div class="cls">
+    </div>
+    <div>
+        <ul class="sub-menu-t">
+            <li class="active"><a class="menu-link" data-section="home" data-nav-title="home"
+                                  data-section-pos="0" data-section-posy="0">Home <i class="fa fa-fw fa-home"></i>
+            </a></li>
+            <li><a class="menu-link" data-section="contact" data-nav-title="contact" data-section-pos="-100"
+                   data-section-posy="0">Contact Us<i class="fa fa-fw fa-list"></i></a></li>
+        </ul>
+    </div>
+    <div class="cls">
+    </div>
+</div>
+<!-- end menu  -->
+<!-- page container -->
+<div class="page-container" style="user-select: none;user-input: none;">
+    <!-- section container -->
+    <div class="section-container">
+        <!-- home section -->
+        <section class="home-section">
+            <!-- section background -->
+            <div class="bg-container"></div>
+
+            <div class="content col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-rlt no-pad centering-y"
+            >
+                <div class="col-md-12 col-sm-12">
+                    <!-- headline -->
+                    <h1>Brave</h1>
+                    <div class="sub-title" id="wordsrotator">
+                        <h4>你的世界！</h4>
+                    </div>
+                    <!-- end headline -->
+                    <!-- short description -->
+                    <p class="desc">
+                        欢迎来到这里,开始一键创建属于自己的博客吧！
+                        <a href="{{ admin_login }}">
+                            <button class="skip-button">Click me
+                            </button>
+                        </a>
+                    </p>
+
+
+                    <!-- end short description -->
+                    <!-- countdown container -->
+                    <div id="countdown" class="countdown-container">
+                        <!-- days left -->
+                        <div class="dash days_dash">
+                            <div class="counter">
+                                <div class="dash_title">days</div>
+                                <div class="digit" id="day">0</div>
+                            </div>
+                        </div>
+                        <!-- end days left -->
+                        <!-- hours left -->
+                        <div class="dash hours_dash">
+                            <div class="counter">
+                                <div class="dash_title">hours</div>
+                                <div class="digit" id="hours">0</div>
+                            </div>
+                        </div>
+                        <!-- end hours left -->
+                        <!-- minutes left -->
+                        <div class="dash minutes_dash">
+                            <div class="counter">
+                                <div class="dash_title">mins</div>
+                                <div class="digit" id="min">0</div>
+                            </div>
+                        </div>
+                        <!-- minutes left -->
+                        <div class="dash seconds_dash">
+                            <div class="counter">
+                                <div class="dash_title">secs</div>
+                                <div class="digit" id="secs">0</div>
+                            </div>
+                        </div>
+
+                        <div id="timer">{{ uptime }}</div>
+
+                    </div>
+                    <!-- end countdown container -->
+                </div>
+            </div>
+            <!-- end content -->
+        </section>
+
+        <section class="contact-section">
+
+            <div class="bg-container-static"></div>
+
+            <div class="content col-md-10 col-md-offset-1 col-sm-12 col-xs-12 no-pad centering-y col-sm-rlt">
+                <!-- details -->
+                <div class="col-md-4 col-sm-12">
+                    <!-- office -->
+                    <div class="details">
+                        <h5>office</h5>
+                        <p>China <br/>Chengdu</p>
+                    </div>
+
+                    <div class="details">
+                        <h5>qq</h5>
+                        <p>1606417655</p>
+                    </div>
+
+                    <div class="details">
+                        <h5>email</h5>
+                        <p>nueck@outlook.com</p>
+                    </div>
+
+
+                    <div class="details">
+                        <h5>stay connected</h5>
+
+
+                        <div class="social-media-container">
+                            <a class="social-media" href="https://github.com/Nueck"><i class="fa fa-github"></i></a>
+                            <a class="social-media" href="https://twitter.com/NueckEndeavor"><i
+                                    class="fa fa-twitter"></i></a>
+                            <!--                            <a class="social-media" href="#"><i class="fa fa-"></i></a>-->
+                        </div>
+
+                    </div>
+                    <!-- end social media -->
+                </div>
+                <!-- end details -->
+
+                <!-- contact form container -->
+                <div class="contact-form-container col-md-8 col-sm-12 col-xs-12">
+                    <h5>DROP US A LINE</h5>
+
+                    <form class="contact-form" action="" method="post" enctype="multipart/form-data">
+                        <!-- left side -->
+                        <div class="col-md-6 col-sm-12 no-pad">
+                            <div class="input-container">
+                                <input type="text" id="name" name="name"/>
+                                <label for="name">name</label>
+
+                                <div class="input-border-bottom"></div>
+                            </div>
+                        </div>
+                        <!-- end left side -->
+
+                        <!-- right side -->
+                        <div class="col-md-6 col-sm-12 no-pad">
+                            <div class="input-container">
+                                <input type="email" id="email" name="email"/>
+                                <label for="email">email</label>
+
+                                <div class="input-border-bottom"></div>
+                            </div>
+                        </div>
+                        <!-- end right side -->
+
+                        <!-- full width -->
+                        <div class="col-xs-12 text-center no-pad">
+                            <div class="input-container no-mrg">
+                                <textarea id="message" name="message"></textarea>
+                                <label for="message">message</label>
+
+                                <div class="input-border-bottom"></div>
+                            </div>
+
+
+                            <div class="col-xs-12 notif-container no-pad">
+                                <div class="form-notif"></div>
+                            </div>
+                            <!-- end notification container -->
+
+                            <!-- button container -->
+                            <div class="col-xs-12 no-pad text-left mrg-top-xs">
+                                <button type="submit" class="button button-green button-small">send</button>
+                            </div>
+                            <!-- end button container -->
+                        </div>
+                        <!-- end full width -->
+                    </form>
+                </div>
+                <!-- end contact form container -->
+            </div>
+            <!-- end content -->
+        </section>
+        <!-- end contact section -->
+    </div>
+    <!-- end section container -->
+</div>
+
+<script>
+
+    const timerElement = document.getElementById('timer');
+    setInterval(
+        () => {
+
+
+            const nowInSeconds = (Date.now() / 1000) - Number(timerElement.innerText);
+
+            const secondsPerMinute = 60;
+            const secondsPerHour = 3600;
+            const secondsPerDay = 86400;
+
+            const days = Math.floor(nowInSeconds / secondsPerDay);
+            const hours = Math.floor((nowInSeconds % secondsPerDay) / secondsPerHour);
+            const minutes = Math.floor((nowInSeconds % secondsPerHour) / secondsPerMinute);
+            const seconds = Math.floor(nowInSeconds % secondsPerMinute);
+
+            document.getElementById("day").innerText = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("min").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("secs").innerText = seconds.toString().padStart(2, '0');
+        }, 1000);
+</script>
+
+
+<!-- javascript import -->
+<!-- jquery -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- bootstrap -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- other plugins -->
+<script type="text/javascript" src="js/plugins.min.js"></script>
+<!-- google map -->
+<!-- main js -->
+<script type="text/javascript" src="js/main_constellation.js"></script>
+</body>
+</html>
